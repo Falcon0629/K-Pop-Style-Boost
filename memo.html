@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>K-Pop Style Boost</title>
+  <link rel="stylesheet" href="css/memo.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logoLink" href="index.html" aria-label="K-Pop Style Boost ホームへ">
+        <img class="header__logo" src="images/logo.webp" alt="K-Pop Style Boost" />
+      </a>
+    </div>
+  </header>
+  <section class="section" id="memo" aria-label="制作メモ">
+  <div class="container">
+    <div class="section__head">
+      <h2>制作メモ</h2>
+      <p class="muted">このサイトの「設計意図」と「実装のポイント」を、短くまとめています。</p>
+    </div>
+
+    <!-- まずは3枚で要点（採用側が一瞬で理解できる形） -->
+    <div class="cards">
+      <article class="card">
+        <h3>課題</h3>
+        <p>
+          K-Pop系のスタイル情報は「情報量が多くて迷う」ことが多い。<br />
+          初心者が、何から手を付ければいいか分からず行動に移せない。
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>解決</h3>
+        <p>
+          “雰囲気”を3軸（清潔感・シルエット・統一感）に整理し、<br />
+          「診断 → 結果 → 再現」に最短で進める導線に統一した。
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>実装</h3>
+        <p>
+          分岐（結果）から次アクションへ迷わないよう、<br />
+          結果画面に「次にやること」を固定導線として配置。<br />
+          レスポンシブでUIが崩れないことを優先して調整。
+        </p>
+      </article>
+    </div>
+
+    <!-- 実装ハイライト（折り畳まない / 箇条書きで見せる） -->
+<div class="section__head memoHead">
+  <h2>実装ハイライト</h2>
+  <p class="muted">このサイトの「分岐ロジック」と「崩れないUIの工夫」を、短くまとめています。</p>
+</div>
+
+<div class="memoBlock" aria-label="実装ハイライトの詳細">
+  <h3 class="memoTitle">ポイント</h3>
+  <ul class="memoList">
+    <li>診断の選択内容をURLパラメータ（クエリ）で引き継ぎ、結果→関連ページでも文脈が切れないようにする</li>
+    <li>分岐が多くても迷子にならないよう、結果画面に「次にやること（整える／買う／オーダー）」を整理して配置</li>
+    <li>スマホ基準で余白・文字サイズ・カード幅を調整し、崩れないUIを優先</li>
+  </ul>
+
+  <h3 class="memoTitle">使用技術</h3>
+  <ul class="memoList memoList--inline">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <h3 class="memoTitle">AIの使い方（透明性）</h3>
+  <p class="muted memoNote">
+    画像の制作補助／文章の推敲／実装方針の検討補助にAIを使用。<br />
+    設計意図の決定・UI設計・実装・調整は自分で行っています。
+  </p>
+</div>
+
+  </div>
+</section>
